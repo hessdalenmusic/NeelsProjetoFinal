@@ -24,6 +24,7 @@
     <string name="bt_ponto">.</string>
     <string name="bt_vir">,</string>
 
+
     <string name="login">login</string>
     <string name="simulador">Simulador</string>
     <string name="email">email</string>
@@ -48,6 +49,11 @@
     <string name="hash">#</string>
     <string name="ligar">#</string>
     <string name="bligar">ligar</string>
+    <string name="textview">TextView</string>
+
+    <string name="nome_perfil">Nome</string>
+    <string name="email_perfil">E-mail</string>
+    <string name="idade_perfil">Idade</string>
 
 
 </resources>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lourdinas.finalaplication">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,9 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="Main Activity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".Login"
+            android:label="Main Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,8 +21,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".Calculadora" />
-        <activity android:name=".LigacaoFaker" />
-        <activity android:name=".CalcularMedia"></activity>
+        <activity android:name=".CalcularMedia" />
+        <activity android:name=".CallFaker" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Registro" />
+        <activity android:name=".Perfil"></activity>
     </application>
 
 </manifest>

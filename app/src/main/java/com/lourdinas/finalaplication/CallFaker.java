@@ -1,5 +1,6 @@
 package com.lourdinas.finalaplication;
 
+import android.support.v7.app.AppCompatActivity;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -11,17 +12,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.lourdinas.finalaplication.R;
-
-class activity_ligacao_faker extends AppCompatActivity {
-
+public class CallFaker extends AppCompatActivity {
     String memoria = "";
     TextView t_ent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ligacao_faker);
+        setContentView(R.layout.activity_call_faker);
         t_ent = findViewById(R.id.t_entrada);
         final Button bt1 = findViewById(R.id.bt_1);
         final Button bt2 = findViewById(R.id.bt_2);
@@ -38,7 +36,6 @@ class activity_ligacao_faker extends AppCompatActivity {
         final Button apa = findViewById(R.id.bt_c);
         final Button ligar = findViewById(R.id.bt_ligar);
 
-
         bt0.setOnClickListener(myListener);
         bt1.setOnClickListener(myListener);
         bt3.setOnClickListener(myListener);
@@ -52,9 +49,6 @@ class activity_ligacao_faker extends AppCompatActivity {
         bth.setOnClickListener(myListener);
         apa.setOnClickListener(myListener);
         ligar.setOnClickListener(myListener);
-
-
-
     }
     private View.OnClickListener myListener = new View.OnClickListener(){
         @Override
@@ -108,9 +102,9 @@ class activity_ligacao_faker extends AppCompatActivity {
                     Intent intent = new Intent(Intent.ACTION_CALL);
                     intent.setData(Uri.parse("tel:"+memoria));
 
-                    if (ActivityCompat.checkSelfPermission(activity_ligacao_faker.this,
+                    if (ActivityCompat.checkSelfPermission(CallFaker.this,
                             Manifest.permission.CALL_PHONE)!= PackageManager.PERMISSION_GRANTED){
-                        ActivityCompat.requestPermissions(activity_ligacao_faker.this,
+                        ActivityCompat.requestPermissions(CallFaker.this,
                                 new String[]{Manifest.permission.CALL_PHONE}, 0);
 
                     }

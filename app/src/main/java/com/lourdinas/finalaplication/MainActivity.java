@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity
                     "Abrir configurações", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.chamadaFalsa) {
 
-            Intent intent = new Intent(MainActivity.this, activity_ligacao_faker.class);
+            Intent intent = new Intent(MainActivity.this, CallFaker.class);
             startActivity(intent);
 
             Toast.makeText(getApplicationContext(),
@@ -92,6 +92,14 @@ public class MainActivity extends AppCompatActivity
 
             Toast.makeText(getApplicationContext(),
                     "Calcular Media", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.perfil) {
+
+            Intent intent = new Intent(MainActivity.this, Perfil.class);
+            startActivity(intent);
+
+            Toast.makeText(getApplicationContext(),
+                    "Perfil", Toast.LENGTH_SHORT).show();
+
         }
 
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
