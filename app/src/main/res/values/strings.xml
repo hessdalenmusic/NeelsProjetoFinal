@@ -56,4 +56,12 @@
     <string name="idade_perfil">Idade</string>
 
 
+    <string name="txt_calcular">Calcular Média</string>
+    <string name="txt_nota1">Nota1</string>
+    <string name="txt_nota2">Nota2</string>
+    <string name="txt_nota3">Nota3</string>
+    <string name="txt_nota4">Nota4</string>
+    <string name="txt_resultado">Resultado =</string>
+
+
 </resources>
